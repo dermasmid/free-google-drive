@@ -116,7 +116,7 @@ def download(file_name: str):
             folder_name = service.files().get(fileId= part["id"]).execute().get("name")
             list_of_parts.append(folder_name)
             time.sleep(0.3)
-        if not token:
+        if not next_page_token:
             not_done = False
 
 
