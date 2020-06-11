@@ -140,4 +140,4 @@ def download(file_name: str):
 
 
 def sort(string):
-    return int(str(data.split("|")[0]))
+    return int(str(string.split("|")[0]))
